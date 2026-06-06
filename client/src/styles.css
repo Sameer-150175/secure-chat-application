@@ -1,0 +1,18 @@
+:root { font-family: Inter, Segoe UI, Arial, sans-serif; background: #f4f7fb; color: #111827; }
+body { margin: 0; }
+.app { max-width: 1180px; margin: 0 auto; padding: 28px 20px; }
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-bottom: 1px solid #dbe3ef; padding-bottom: 18px; }
+.eyebrow { color: #4338ca; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 6px; }
+h1 { margin: 0; font-size: 32px; }
+h2 { margin: 10px 0 14px; font-size: 18px; }
+button { display: inline-flex; gap: 8px; align-items: center; border: 0; border-radius: 8px; padding: 10px 14px; background: #4338ca; color: white; font-weight: 700; cursor: pointer; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+.grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; margin: 20px 0; }
+.panel { background: white; border: 1px solid #dbe3ef; border-radius: 8px; padding: 18px; box-shadow: 0 10px 22px rgba(15, 23, 42, .07); }
+.auth { display: grid; gap: 10px; }
+input { border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px 12px; font-size: 15px; }
+.metric { font-size: 42px; font-weight: 800; margin: 0; color: #4338ca; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; display: grid; gap: 8px; }
+.card span, .card small { color: #475569; }
+@media (max-width: 760px) { .toolbar, .grid { grid-template-columns: 1fr; display: grid; } }
